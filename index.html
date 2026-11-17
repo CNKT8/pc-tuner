@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>电脑性能优化助手 v16.0 下载 · 猫猫科技</title>
+<meta name="description" content="电脑性能优化助手 v16.0：Windows 10/11 本地单机性能优化工具，免安装、免 Python、不需要账号、不联网。覆盖系统概览、实时监控、CPU/GPU 频率与真超频、风扇调速、空间清理、录屏、网络加速等 14 个功能页。">
+<meta name="keywords" content="电脑性能优化助手,猫猫科技,Windows优化工具,CPU超频,GPU超频,风扇调速,磁盘清理,录屏,网络加速,单文件exe">
+<style>
+  :root{
+    --ink:#12203a; --ink-2:#3d5175; --ink-3:#6b7f9e;
+    --line:#dfe8f5; --line-2:#c3d6ee;
+    --blue:#2563eb; --blue-2:#1d4ed8;
+    --paper:#ffffff; --wash:#f4f8ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      linear-gradient(var(--line) 1px, transparent 1px) 0 0/100% 64px,
+      linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0/64px 100%,
+      var(--paper);
+    color:var(--ink);
+    font-family:"Microsoft YaHei UI","Microsoft YaHei","PingFang SC",sans-serif;
+    font-size:16px; line-height:1.75;
+  }
+  .wrap{max-width:980px;margin:0 auto;padding:0 22px}
+  header{padding:56px 0 34px;border-bottom:1px solid var(--line-2);position:relative}
+  .kicker{font-size:13px;letter-spacing:.16em;color:var(--blue);font-weight:700}
+  h1{margin:10px 0 6px;font-size:46px;line-height:1.18;letter-spacing:-.5px}
+  h1 span{color:var(--blue)}
+  .lead{margin:0;max-width:46em;color:var(--ink-2);font-size:17px}
+  .facts{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0;padding:0;list-style:none}
+  .facts li{border:1px solid var(--line-2);background:#fff;padding:5px 12px;
+    font-size:13px;color:var(--ink-2)}
+  .facts li b{color:var(--ink)}
+
+  section{padding:44px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:15px;letter-spacing:.14em;color:var(--ink-2);margin:0 0 18px;font-weight:700}
+  h2 i{display:inline-block;width:26px;height:2px;background:var(--blue);vertical-align:middle;margin-right:10px}
+
+  .download{display:block}
+  .dl-main .name{font-size:27px;font-weight:700;margin:0 0 6px}
+  .dl-main .meta{color:var(--ink-3);font-size:14px;margin:0 0 20px}
+  .btn{display:inline-block;background:var(--blue);color:#fff;text-decoration:none;
+    padding:15px 34px;font-size:17px;font-weight:700;border:1px solid var(--blue-2);
+    box-shadow:4px 4px 0 rgba(37,99,235,.18);transition:transform .14s ease}
+  .btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 rgba(37,99,235,.22)}
+  .btn.ghost{background:#fff;color:var(--blue);box-shadow:none;border-color:var(--line-2);
+    font-size:15px;padding:11px 20px;font-weight:600}
+  .btn.ghost:hover{border-color:var(--blue);transform:none}
+  .hash{margin:18px 0 0;font-size:12.5px;color:var(--ink-3);word-break:break-all;
+    font-family:Consolas,"Courier New",monospace;line-height:1.6}
+  .card{border:1px solid var(--line-2);background:var(--wash);padding:20px 22px;max-width:560px;margin:22px 0 0}
+  .card h3{margin:0 0 10px;font-size:15px}
+  .card ol{margin:0;padding-left:20px;color:var(--ink-2);font-size:14px}
+  .card li{margin:4px 0}
+  .shot{margin-top:24px;border:1px solid var(--line-2);display:block;max-width:900px}
+  .shot img{display:block;width:100%;height:auto}
+
+  table{width:100%;border-collapse:collapse;font-size:14.5px}
+  th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--ink-2);font-weight:700;font-size:13px;letter-spacing:.06em}
+  td:first-child{white-space:nowrap;font-weight:700;width:132px}
+
+  .defects{columns:2;column-gap:34px;font-size:14.5px;color:var(--ink-2);margin:0;padding:0;list-style:none}
+  .defects li{break-inside:avoid;margin:0 0 12px;padding-left:18px;position:relative}
+  .defects li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;
+    background:var(--blue);transform:rotate(45deg)}
+
+  .changelog{font-size:14.5px;color:var(--ink-2)}
+  .changelog h3{margin:0 0 8px;font-size:15px;color:var(--ink)}
+  .changelog p{margin:0 0 6px}
+
+  footer{padding:34px 0 56px;color:var(--ink-3);font-size:13px}
+  footer b{color:var(--ink-2)}
+  @media(max-width:760px){
+    h1{font-size:31px}
+    .defects{columns:1}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="kicker">猫猫科技 · WINDOWS 本地工具</div>
+  <h1>电脑性能优化助手 <span>v16.0</span></h1>
+  <p class="lead">一台电脑、双击就开。免安装、免 Python、不需要账号、不联网。
+  本机能做的事它真做：改电源计划、调 CPU 频率、写 NVAPI 显卡频率偏移、真实风扇调速、清缓存、录屏、改 TCP/DNS 参数——不是点一下就显示"优化完成"的空壳。</p>
+  <ul class="facts">
+    <li><b>74.1 MB</b> 单文件</li>
+    <li>Windows 10 / 11 <b>64 位</b></li>
+    <li><b>14</b> 个功能页</li>
+    <li>账号 / 会员 / 排行榜 <b>已移除</b></li>
+    <li>更新 <b>2026-11-16</b></li>
+  </ul>
+</header>
+
+<section>
+  <h2><i></i>下载</h2>
+  <div class="download">
+    <div class="dl-main">
+      <p class="name">电脑性能优化助手.exe</p>
+      <p class="meta">v16.0 · 74,136,198 字节 · 绿色单文件，解压即用</p>
+      <a class="btn" href="电脑性能优化助手.exe" download>下载 exe</a>
+      <a class="btn ghost" href="使用说明.txt" download>下载使用说明.txt</a>
+      <p class="hash">SHA-256：28c8aba898a3c49ac10b144f4138c1961dfaff1c55cff696a6a755a696862cd1<br>
+      下载后可用 <b>certutil -hashfile 电脑性能优化助手.exe SHA256</b> 核对，哈希一致才是原包。</p>
+    </div>
+    <div class="card">
+      <h3>怎么开</h3>
+      <ol>
+        <li>点上面的按钮下载 exe（chrome 可能提示"不常见下载"，选"保留"）</li>
+        <li>双击运行；首次可能弹"已保护你的电脑" → 更多信息 → 仍要运行</li>
+        <li>超频、清理系统临时文件这类，右键"以管理员身份运行"才真生效</li>
+        <li>软件里所有系统修改都先备份，随时可"一键恢复默认"</li>
+      </ol>
+      <div class="shot"><img src="shot-main.png" alt="电脑性能优化助手 v16.0 主界面：14 个功能页签，右上角没有账户区"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><i></i>14 个功能页</h2>
+  <table>
+    <tr><td>① 系统概览</td><td>CPU / 内存 / C 盘 / 显卡 / 主板全品牌主动检测，一键导出系统报告</td></tr>
+    <tr><td>② 实时监控</td><td>CPU、内存、C 盘、GPU 圆形仪表盘，GPU/CPU 温度、磁盘与网络速率</td></tr>
+    <tr><td>③ 智能中心</td><td>智能体检打分、内存占用扫描（只关你自己开的程序）、帧生成能力识别、DNS 延迟实测、极速降温</td></tr>
+    <tr><td>④ 性能模式</td><td>节能 / 均衡 / 高性能 / 野兽模式（卓越性能 + 全核拉满 + 主动散热），F5 确认激活</td></tr>
+    <tr><td>⑤ 进程管理</td><td>内存占用排序，系统关键进程受保护，explorer 只重启不结束</td></tr>
+    <tr><td>⑥ 空间清理</td><td>缓存白名单清理 + 大文件只读报告，个人文件与回收站一律不碰</td></tr>
+    <tr><td>⑦ 硬件与风扇</td><td>NVIDIA（NVAPI）/ AMD（ADL）真实风扇调速，温度看门狗，退出自动恢复自动调速</td></tr>
+    <tr><td>⑧ 性能调度</td><td>CPU 频率上下限、进程亲和性、GPU 锁频、NVAPI 真超频（SetPstates20）、F5 + UAC 双确认</td></tr>
+    <tr><td>⑨ 安全扫描</td><td>急救箱检测、Defender 脱机扫描指引、快速扫描与威胁历史</td></tr>
+    <tr><td>⑩ 使用说明</td><td>软件内完整说明 + 自定义背景图</td></tr>
+    <tr><td>⑪ 捐款项目</td><td>微信收款码</td></tr>
+    <tr><td>⑫ 猫猫AI</td><td>本地规则引擎对话，"切到游戏模式""清理垃圾""帮我体检"直接执行</td></tr>
+    <tr><td>⑬ 录屏工具</td><td>1080p / 原始分辨率 / 2K，30 / 60 / 120 帧全部开放</td></tr>
+    <tr><td>⑭ 网络加速</td><td>TCP 全局参数、关 Nagle、解除 QoS 保留带宽、网卡节电；不做跨境专线</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2><i></i>已知缺陷（先说清楚，别当 BUG 报）</h2>
+  <ul class="defects">
+    <li>GPU 跑分是按型号表估算，不是实测，只能横向比。</li>
+    <li>CPU 外频/倍频没法在 Windows 里软件超，只能引导 Intel XTU / AMD Ryzen Master。</li>
+    <li>风扇调速依赖 VBIOS 开放接口，品牌机/笔记本常被锁死，软件会如实说"不支持"。</li>
+    <li>CPU 温度依赖 LibreHardwareMonitor，没装就显示 N/A（不捆绑、不代下载）。</li>
+    <li>录屏 2K/120 帧吃机器性能，老显卡上会掉帧，这是硬件限制。</li>
+    <li>网络加速只动本机 TCP/DNS/MTU/QoS，跨境延迟一点都不会变。</li>
+    <li>清理只动缓存和系统日志，回收站与个人文件永远不碰。</li>
+    <li>本版本没有云同步、没有账号、没有任何联网上报。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><i></i>更新记录</h2>
+  <div class="changelog">
+    <h3>v16.0（2026-11-16）</h3>
+    <p>账号 / 注册 / 登录 / 会员 / 排行榜整体删除，启动不再弹登录框；解除全部会员门禁，超频、风扇调速、网络加速、录屏 2K/120 帧直接可用；页签 15 → 14。</p>
+    <h3>v15.0</h3>
+    <p>会员体系（已于 v16.0 移除）：账户区、三档套餐、CDK、订单、排行榜、黑金壁纸。</p>
+    <h3>v14.4</h3>
+    <p>网络页增强：DNS 优选、MTU 探测、路由诊断、游戏 QoS。</p>
+  </div>
+</section>
+
+<footer>
+  <p><b>猫猫科技</b> · 电脑性能优化助手 v16.0 · 本页只提供下载，软件本身不联网、不上传任何数据。</p>
+  <p>超频有风险，先小步试；超频导致的硬件问题与软件作者无关。</p>
+</footer>
+
+</div>
+</body>
+</html>
