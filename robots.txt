@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cnkt8.github.io/pc-tuner/sitemap.xml
